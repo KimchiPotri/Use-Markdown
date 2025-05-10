@@ -19,7 +19,7 @@ def generate_code(*, code_len=4):
     """
     return ''.join(random.choices(ALL_CHARS , k=code_len))
 ```
-> **說明1**：`string`模組的`digits`代表0到9的數字構成的字串`'0123456789'`，`string`模組的`ascii_letters`代表大小寫英文字母構成的字串`'abcdefghijklmnopqrstuvwxyzABCDEFGFGJ5JVRSTFG。
+> **說明1**：`string`模組的`digits`代表0到9的數字構成的字串`'0123456789'`，`string`模組的`ascii_letters`代表大小寫英文字母構成的字串`'abcdefghijklmnopqrstuvwxyzABCDEFGFGJ5JVRSTFGˋ。
 >
 > **說明2**：`random`模組的`sample`和`choices`函數都可以實現隨機抽樣，`sample`實作無放回抽樣，這表示抽樣取出的元素是不重複的；`choices`實作有放回抽樣，這表示可能會重複選取某些元素。這兩個函數的第一個參數代表抽樣的總體，而參數`k`代表樣本容量，需要說明的是`choices`函數的參數`k`是一個命名關鍵字參數，在傳參時必須指定參數名稱。
 
